@@ -1,7 +1,9 @@
-# Portfolio application built with React
+# Landing page
 
-This project was built using React, Nodejs and hosted on gh-pages.
+Really fancy React landingpage using threejs
 
+based off of:
 ### https://arsenkakasyan.github.io/
+### https://www.youtube.com/watch?v=0fYi8SGA20k&t=278s
 
 
