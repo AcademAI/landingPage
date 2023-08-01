@@ -22,7 +22,7 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-black`}>
             {language === "RU" ? "Привет, мы" : "Hey, we're"}&nbsp;
             <span className="text-[#56ccf2]">
-              {language === "RU" ? "АкадемИИя" : "AcademAI"}
+              {language === "RU" ? "АкадемИИя" : "AcademYA"}
             </span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-black-100`}>

@@ -15,10 +15,11 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
+
+    neurengine,
+    qr,
+    academya,
+
     carrent,
     jobit,
     tripguide,
@@ -30,33 +31,33 @@ import {
   export const navLinks = [
     {
       id: "about",
-      title: "About",
+      title: ["О нас", "About"]
     },
     {
-      id: "work",
-      title: "Work",
+      id: "product",
+      title: ["Продукты", "Products"]
     },
     {
       id: "contact",
-      title: "Contact",
+      title: ["Связаться", "Contact"]
     },
   ];
   
   const services = [
     {
-      title: "LLM apps",
+      title: ["Софт с LLM", "LLM apps"],
       icon: web,
     },
     {
-      title: "Backend services",
+      title: ["Бэкэнд сервисы", "Backend services"],
       icon: backend,
     },
     {
-      title: "React web apps",
+      title: ["Веб приложения", "Web apps"],
       icon: mobile,
     },
     {
-      title: "IT Courses",
+      title: ["IT Курсы", "IT Courses"],
       icon: creator,
     },
   ];
@@ -116,57 +117,47 @@ import {
     },
   ];
   
-  const experiences = [
+  const products = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      title: ["Нейродвижок", "Neurengine"],
+      status: ["MVP v0.1.0","MVP v0.1.0"],
+      icon: neurengine,
+      iconBg: "#000000",
+      model: ["Freemium","Freemium"],
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        ["Работает на основе ChatGPT.","Runs on ChatGPT."],
+        ["Помнит контекст, генерирует изображения и отвечает на голосовые сообщения.","Remembers context, generates images and responds to voice messages."],
+        ["Поддерживает API вызовы к другим сервисам через вызов функций.", "Supports API calls to other services via function calling."],
+        ["Поддерживает AutoGPT режим.", "Supports AutoGPT mode."],
+        ["Имеет удобный интерфейс в виде Telegram бота.", "Has a convenient interface in the form of Telegram bot."],
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      title: ["Учет товаров по QR кодам", "Goods record by QR codes"],
+      status: ["MVP v0.1.0","MVP v0.1.0"],
+      icon: qr,
+      iconBg: "#000000",
+      model: ["Транзакционная","Transaction"],
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        ["Генерирует новые QR-коды для маркировки товаров и контейнеров.", "Generates new QR codes for goods and containers labeling."],
+        ["Хранит содержимое контейнеров и описание изделий в базе данных.","Stores the contents of containers and product descriptions in the database."],
+        ["Определяет содержимое контейнера на основании распознанной маркировки.", "Determines the contents of the container based on the recognized markings."],
+        ["Определяет принадлежность изделия конкретному контейнеру по его характеристикам.", "Determines whether the product belongs to a specific container according to its characteristics."],
+        ["Имеет удобный интерфейс в виде мобильного приложения под iOS и Android.", "Has a convenient interface in the form of a mobile application for iOS and Android."],
+        ["Есть API. Работает с Нейродвижком.", "Has API. Works with Neurengine."],
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      title: ["АкадемИИя", "AcademYA"],
+      status: ["Прототип", "Prototype"],
+      icon: academya,
+      iconBg: "#fff",
+      model: ["EdTech Маркетплейс","EdTech Marketplace"],
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        ["Позволяет создавать и размещать свои курсы.","Allows to create and place your own courses."],
+        ["Позволяет самостоятельно управлять ценой курсов.","Allows to controle the price of the courses."],
+        ["Оставляет права на контент за вами.", "Reserves the rights to the content for you."],
+        ["Есть API. Позволяет учиться вместе с Нейродвижком.", "Has API. Allows to study with Neurengine."],
       ],
     },
   ];
@@ -264,4 +255,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, products, testimonials, projects };

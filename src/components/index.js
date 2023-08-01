@@ -5,7 +5,7 @@ import About from './About'
 import Contact from './Contact'
 import CanvasLoader from "./Loader";
 //import Tech from './Tech';
-import Experience from './Experience';
+import Products from './Products';
 //import Works from './Works';
 //import Feedbacks from './Feedbacks';
 //import Contact from './Contact';
@@ -16,7 +16,7 @@ export {
   About,
   CanvasLoader,
   //Tech,
-  Experience,
+  Products,
   //Works,
   //Feedbacks,
   Contact,

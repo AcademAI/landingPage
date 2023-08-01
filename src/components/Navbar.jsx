@@ -33,7 +33,7 @@ const Navbar = () => {
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-black text-[18px] font-bold cursor-pointer flex">
-            {language === "RU" ? "АкадемИИя" : "AcademAI"}&nbsp;
+            {language === "RU" ? "АкадемИИя" : "AcademYA"}&nbsp;
             <span className="sm:block hidden">
               |&nbsp;
               {language === "RU"
@@ -47,12 +47,12 @@ const Navbar = () => {
             <li
               key={link.id}
               className={`${
-                active === link.title ? "text-black" : "text-secondary"
+                active === link.title[language === "RU" ? 0: 1] ? "text-black" : "text-secondary"
               } hover:text-black text-[18px]
                   font-medium cursor-pointer`}
-              onClick={() => setActive(link.title)}
+              onClick={() => setActive(link.title[language === "RU" ? 0: 1])}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              <a href={`#${link.id}`}>{link.title[language === "RU" ? 0: 1]}</a>
             </li>
           ))}
         </ul>
@@ -78,14 +78,14 @@ const Navbar = () => {
               <li
                 key={link.id}
                 className={`${
-                  active === link.title ? "text-black" : "text-secondary"
+                  active === link.title[language === "RU" ? 0: 1] ? "text-black" : "text-secondary"
                 } font-poppins font-medium cursor-pointer text-[16px]`}
                 onClick={() => {
                   setToggle(!toggle);
-                  setActive(link.title);
+                  setActive(link.title[language === "RU" ? 0: 1]);
                 }}
               >
-                <a href={`#${link.id}`}>{link.title}</a>
+                <a href={`#${link.id}`}>{link.title[language === "RU" ? 0: 1]}</a>
               </li>
             ))}
           </ul>
