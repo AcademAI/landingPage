@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Tilt } from "react-tilt";
+import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { services } from "../constants";
@@ -66,3 +66,5 @@ const About = () => {
 };
 
 export default SectionWrapper(About, "about");
+
+

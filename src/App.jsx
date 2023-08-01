@@ -1,6 +1,5 @@
-import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import { Navbar, Hero, About, Experience, Contact } from "./components";
+import { Navbar, Hero, About, Experience } from "./components";
 import { LanguageProvider } from "./LanguageContext";
 import { heroImage } from "./assets";
 
