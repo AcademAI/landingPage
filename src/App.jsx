@@ -1,22 +1,18 @@
 import { BrowserRouter } from "react-router-dom";
-import { Navbar, Hero, About, Experience } from "./components";
+import { Navbar, Hero, About, Products } from "./components";
 import { LanguageProvider } from "./LanguageContext";
-import { heroImage } from "./assets";
 
 const App = () => {
   return (
     <BrowserRouter>
       <LanguageProvider>
         <div className="relative z-0 bg-primary">
-          <div
-            className="bg-hero-pattern bg-cover bg-no-repeat bg-center"
-            style={{ backgroundImage: `url(${heroImage})` }}
-          >
+          <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
             <Navbar />
             <Hero />
           </div>
           <About/>
-          <Experience/>
+          <Products/>
           {/*<Contact/>*/}
         </div>
       </LanguageProvider>

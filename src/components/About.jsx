@@ -9,6 +9,8 @@ import { SectionWrapper } from "../hoc";
 import { LanguageContext } from "../LanguageContext";
 
 const ServiceCard = ({ index, title, icon }) => {
+  const { language } = useContext(LanguageContext);
+
   return (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
@@ -25,7 +27,7 @@ const ServiceCard = ({ index, title, icon }) => {
         >
           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
           <h3 className="text-secondary text-[20px] font-bold text-center">
-            {title}
+            {title[language === "RU" ? 0: 1]}
           </h3>
         </div>
       </motion.div>

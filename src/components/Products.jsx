@@ -3,48 +3,51 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import { motion } from 'framer-motion';
 import 'react-vertical-timeline-component/style.min.css';
 import { styles } from '../styles';
-import { experiences } from '../constants';
+import { products } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
 import { LanguageContext } from "../LanguageContext";
 
-const ExperienceCard = ({ experience }) => {
+const ProductCard = ({ product }) => {
+  const { language } = useContext(LanguageContext);
+
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1d1836",
-        color: "#fff",
+        background: "#ffffff",
+        color: "#232631",
+        boxShadow: "0 10px 10px rgba(0, 0, 0, 0.1)",
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-      date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
+      contentArrowStyle={{ borderRight: "7px solid  #56ccf2" }}
+      date={`${language === "RU" ? "Бизнес-модель" : "Business model"}: ${product.model[language === "RU" ? 0: 1]}`}
+      iconStyle={{ background: product.iconBg }}
       icon={
         <div className='flex justify-center items-center w-full h-full'>
           <img
-            src={experience.icon}
-            alt={experience.company_name}
+            src={product.icon}
+            alt={product.status}
             className='w-[60%] h-[60%] object-contain'
           />
         </div>
       }
     >
       <div>
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+        <h3 className='text-black text-[24px] font-bold'>{product.title[language === "RU" ? 0: 1]}</h3>
         <p
           className='text-secondary text-[16px] font-semibold'
           style={{ margin: 0 }}
-        >
-          {experience.company_name}
+        >{language === "RU" ? "Статус" : "Status"}:&nbsp;
+          {product.status[language === "RU" ? 0: 1]}
         </p>
       </div>
 
       <ul className='mt-5 list-disc ml-5 space-y-2'>
-        {experience.points.map((point, index) => (
+        {product.points.map((point, index) => (
           <li
-            key={`experience-point-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'
+            key={`product-point-${index}`}
+            className='text-black-100 text-[14px] pl-1 tracking-wider'
           >
-            {point}
+            {point[language === "RU" ? 0: 1]}
           </li>
         ))}
       </ul>
@@ -52,7 +55,7 @@ const ExperienceCard = ({ experience }) => {
   );
 };
 
-const Experience = () => {
+const Products = () => {
   const { language } = useContext(LanguageContext);
 
   return (
@@ -63,16 +66,16 @@ const Experience = () => {
           {language === "RU" ? "Экосистема" : "Ecosystem"}
         </p>
         <h2 className={styles.sectionHeadText}>
-          {language === "RU" ? "Наши сервисы" : "Our services"}
+          {language === "RU" ? "Наши продукты" : "Our products"}
         </h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">
-        <VerticalTimeline lineColor="#232631">
-          {experiences.map((experience, index) => (
-            <ExperienceCard 
+        <VerticalTimeline lineColor="#56ccf2">
+          {products.map((product, index) => (
+            <ProductCard 
             key={index} 
-            experience={experience}
+            product={product}
             />
           ))}
         </VerticalTimeline>
@@ -81,4 +84,4 @@ const Experience = () => {
   )
 }
 
-export default SectionWrapper(Experience, "work")
+export default SectionWrapper(Products, "product")
