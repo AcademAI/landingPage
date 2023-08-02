@@ -91,12 +91,12 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <button
-          className={` ${clicked ? "clicked" : ""}`}
+        <div
+          className={` flex justify-end ${clicked ? "clicked" : ""}`}
           onClick={handleClick}
         >
-          <img src={langswitch} alt="" className="w-9 h-9 object-contain" />
-        </button>
+          <img src={langswitch} alt="" className="w-[36px] h-[36px] object-contain cursor-pointer" />
+        </div>
       </div>
     </nav>
   );

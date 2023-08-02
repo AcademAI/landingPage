@@ -9,19 +9,12 @@ import close from "./close.svg";
 import langswitch from "./langswitch.svg";
 import heroImage from "./herobg.png"
 
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+
+import sber from "./tech/sber.png";
+import progress from "./tech/progress.png";
+import ugtu from "./tech/ugtu.png";
+import amiks from "./tech/amiks.png";
+import bi from "./tech/bi.jpg";
 
 import neurengine from "./products/neurengine.png";
 import qr from "./products/qr.png";
@@ -43,19 +36,13 @@ export {
   github,
   menu,
   close,
-  css,
-  docker,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
+  
+  
+  sber,
+  progress,
+  ugtu,
+  amiks,
+  bi,
 
   neurengine,
   qr,
