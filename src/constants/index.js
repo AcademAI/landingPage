@@ -181,9 +181,9 @@ import {
       image: "https://i.ibb.co/J2rc4GF/Screenshot-4.png",
     },
     {
-      name: ["Нейродвижок", "Neurengine"],
+      name: ["API сервисов", "Services API"],
       description: 
-      ["Telegram бот на основе ChatGPT. Позволяет генерировать изображения, отвечает на голосовые сообщения, подключена платежная система. Сейчас пробуем внедрять Function Calling от OpenAI через плагины и тестируем AutoGPT версию.",
+      ["Связующее звено всех сервисов в нашей экосистеме. Один из ключевых компонентов системы позволяющий Нейродвижку обращаться к любому сервису с API.",
        "Telegram bot based on ChatGPT. Allows you to generate images, responds to voice messages, a payment system is connected. Currently we're trying to implement OpenAI Function Calling via plugins and testing the AutoGPT version."],
       tags: [
         {
@@ -191,16 +191,8 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "fastapi",
           color: "green-text-gradient",
-        },
-        {
-          name: "openai",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "telegram",
-          color: "orange-text-gradient",
         },
       ],
       repos: [
