@@ -184,7 +184,7 @@ import {
       name: ["API сервисов", "Services API"],
       description: 
       ["Связующее звено всех сервисов в нашей экосистеме. Один из ключевых компонентов системы позволяющий Нейродвижку обращаться к любому сервису с API.",
-       "Telegram bot based on ChatGPT. Allows you to generate images, responds to voice messages, a payment system is connected. Currently we're trying to implement OpenAI Function Calling via plugins and testing the AutoGPT version."],
+       "The connecting link of all services in our ecosystem. One of the key components of the system allows the Neuroengine to access any service with an API."],
       tags: [
         {
           name: "python",
