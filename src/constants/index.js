@@ -3,18 +3,12 @@ import {
     backend,
     creator,
     web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
+
+    sber,
+    progress,
+    ugtu,
+    amiks,
+    bi,
 
     neurengine,
     qr,
@@ -23,7 +17,6 @@ import {
     carrent,
     jobit,
     tripguide,
-    threejs,
   } from "../assets";
 
 
@@ -64,56 +57,24 @@ import {
   
   const technologies = [
     {
-      name: "HTML 5",
-      icon: html,
+      name: "Sberbank",
+      icon: sber,
     },
     {
-      name: "CSS 3",
-      icon: css,
+      name: "Progress",
+      icon: progress,
     },
     {
-      name: "JavaScript",
-      icon: javascript,
+      name: "Ugtu",
+      icon: ugtu,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
+      name: "Amiks",
+      icon: amiks,
     },
     {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
+      name: "BI",
+      icon: bi,
     },
   ];
   

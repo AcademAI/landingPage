@@ -19,13 +19,13 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-black`}>
+          <h1 className={`${styles.heroHeadText} text-black text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl`}>
             {language === "RU" ? "Привет, мы" : "Hey, we're"}&nbsp;
             <span className="text-[#56ccf2]">
               {language === "RU" ? "АкадемИИя" : "AcademYA"}
             </span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-black-100`}>
+          <p className={`${styles.heroSubText} mt-2 text-black-100 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl`}>
             {language === "RU"
               ? "Мы разрабатываем курсы"
               : "We're developing courses"}
