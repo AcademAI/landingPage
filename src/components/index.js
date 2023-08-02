@@ -6,7 +6,7 @@ import Contact from './Contact'
 import CanvasLoader from "./Loader";
 import Tech from './Tech';
 import Products from './Products';
-//import Works from './Works';
+import Works from './Works';
 //import Feedbacks from './Feedbacks';
 //import Contact from './Contact';
 
@@ -17,7 +17,7 @@ export {
   CanvasLoader,
   Tech,
   Products,
-  //Works,
+  Works,
   //Feedbacks,
   Contact,
   EarthCanvas, 

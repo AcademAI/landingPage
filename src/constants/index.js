@@ -13,10 +13,6 @@ import {
     neurengine,
     qr,
     academya,
-
-    carrent,
-    jobit,
-    tripguide,
   } from "../assets";
 
 
@@ -152,12 +148,13 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
-      description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      name: ["Нейродвижок", "Neurengine"],
+      description: 
+      ["Telegram бот на основе ChatGPT. Позволяет генерировать изображения, отвечает на голосовые сообщения, подключена платежная система. Сейчас пробуем внедрять Function Calling от OpenAI через плагины и тестируем AutoGPT версию.",
+       "Telegram bot based on ChatGPT. Allows you to generate images, responds to voice messages, a payment system is connected. Currently we're trying to implement OpenAI Function Calling via plugins and testing the AutoGPT version."],
       tags: [
         {
-          name: "react",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
@@ -165,55 +162,94 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "openai",
           color: "pink-text-gradient",
         },
+        {
+          name: "telegram",
+          color: "orange-text-gradient",
+        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      repos: [
+        {
+          name: ["Приватный Репо","Private Repo"],
+        },
+        {
+          name: ["Очень Активный", "Heavily Active"],
+        },
+      ],
+      image: "https://i.ibb.co/J2rc4GF/Screenshot-4.png",
     },
     {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      name: ["Нейродвижок", "Neurengine"],
+      description: 
+      ["Telegram бот на основе ChatGPT. Позволяет генерировать изображения, отвечает на голосовые сообщения, подключена платежная система. Сейчас пробуем внедрять Function Calling от OpenAI через плагины и тестируем AutoGPT версию.",
+       "Telegram bot based on ChatGPT. Allows you to generate images, responds to voice messages, a payment system is connected. Currently we're trying to implement OpenAI Function Calling via plugins and testing the AutoGPT version."],
       tags: [
         {
-          name: "react",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "mongodb",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "openai",
           color: "pink-text-gradient",
         },
+        {
+          name: "telegram",
+          color: "orange-text-gradient",
+        },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      repos: [
+        {
+          name: ["Приватный Репо","Private Repo"],
+        },
+        {
+          name: ["Активный", "Active"],
+        },
+      ],
+      image: "https://i.ibb.co/zGcL6R3/API.png",
     },
     {
-      name: "Trip Guide",
+      name: ["АкадемИИя", "AcademYA"],
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      ["Образовательный маркетплейс нацеленный на пользовательский опыт и интеграцию с Нейродвижком. Сейчас пишем конструктор курсов и API к базе данных.", 
+      "Educational marketplace focused on user experience and integration with Neurengine. Now we are writing a course builder and an API for the database."],
       tags: [
         {
-          name: "nextjs",
+          name: "php",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "javascript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "mysql",
           color: "green-text-gradient",
         },
         {
-          name: "css",
-          color: "pink-text-gradient",
+          name: "bootstrap",
+          color: "orange-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      repos: [
+        {
+          name: ["Публичный Репо","Public Repo"],
+        },
+        {
+          name: ["Менее Активный", "Less Active"],
+        },
+      ],
+      image: "https://i.ibb.co/NtVM1rp/logo-init.png",
+      source_code_link: "https://github.com/AcademAI/ALLM",
     },
+    
+
+    //....другие projects схожей структуры
   ];
   
   export { services, technologies, products, testimonials, projects };

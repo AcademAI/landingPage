@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import { Navbar, Hero, About, Products, Tech } from "./components";
+import { Navbar, Hero, About, Products, Tech, Works } from "./components";
 import { LanguageProvider } from "./LanguageContext";
 
 const App = () => {
@@ -14,6 +14,7 @@ const App = () => {
           <About/>
           <Products/>
           <Tech/>
+          <Works />
           {/*<Contact/>*/}
         </div>
       </LanguageProvider>
