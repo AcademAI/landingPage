@@ -21,10 +21,6 @@ import qr from "./products/qr.png";
 import academya from "./products/academya.png";
 
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-
 export {
   logo,
   heroImage,
@@ -47,9 +43,4 @@ export {
   neurengine,
   qr,
   academya,
-
-
-  carrent,
-  jobit,
-  tripguide,
 };
