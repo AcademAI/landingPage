@@ -88,7 +88,7 @@ const Navbar = () => {
           </div>
         </ul>
 
-        <div className="lg:hidden flex flex-1 justify-end items-center p-6">
+        <div className="lg:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
             alt="menu"
