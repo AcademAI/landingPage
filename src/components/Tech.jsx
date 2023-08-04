@@ -5,13 +5,13 @@ import { textVariant } from '../utils/motion';
 import { styles } from '../styles';
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
-import { technologies } from "../constants";
+import { companies } from "../constants";
 import { LanguageContext } from "../LanguageContext";
 
 const Tech = () => {
 
   const { language } = useContext(LanguageContext);
-  const icons = Object.values(technologies).map((technology) => technology.icon);
+  const icons = Object.values(companies).map((company) => company.icon);
 
   return (
     <>
