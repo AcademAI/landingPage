@@ -15,17 +15,22 @@ const Hero = () => {
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#56ccf2]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
+          <div className="w-1 sm:h-80 h-40 blue-gradient" />
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-black text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl`}>
-            {language === "RU" ? "Привет, мы" : "Hey, we're"}&nbsp;
+          <h1 className={`${styles.heroHeadText} text-black lg:text-[60px] sm:text-[50px] xs:text-[40px] text-[40px] lg:leading-[98px] mt-2 text-black`}>
+            {language === "RU" 
+            ? "Привет, мы " 
+            : "Hey, it's "}
+            
             <span className="text-[#56ccf2]">
-              {language === "RU" ? "АкадемИИя" : "AcademYA"}
+            {language === "RU" 
+            ? "АкадемИИя" 
+            : "AcademYA"}
             </span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-black-100 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl`}>
+          <p className={`${styles.heroSubText} font-medium lg:text-[30px] sm:text-[26px] xs:_ext-[20px] text-[16px] lg:leading-[40px] mt-2 text-black`}>
             {language === "RU"
               ? "Мы разрабатываем курсы"
               : "We're developing courses"}
@@ -36,7 +41,7 @@ const Hero = () => {
       </div>
       
       <ComputersCanvas/>
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-10">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div

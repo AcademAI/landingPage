@@ -33,7 +33,17 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.violet-gradient {
+.menu-gradient {
+  background: #56ccf2;
+  background: linear-gradient(-90deg, #56ccf2 0%, #ffffff 100%);
+  background: -webkit-linear-gradient(
+    -180deg,
+    #56ccf2 0%,
+    #ffffff 100%
+  );
+}
+
+.blue-gradient {
   background: #56ccf2;
   background: linear-gradient(-90deg, #56ccf2 0%, rgba(240, 240, 240, 0) 100%);
   background: -webkit-linear-gradient(
@@ -43,7 +53,7 @@
   );
 }
 
-.green-pink-gradient {
+.green-blue-gradient {
   background: #09da6b;
   background: linear-gradient(90.13deg, #09da6b 1.9%, #56ccf2 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #09da6b 1.9%, #56ccf2 97.5%);
