@@ -4,6 +4,7 @@ import { LanguageContext } from "../LanguageContext";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { SectionWrapper } from "../hoc";
 
 const Hero = () => {
   const { language } = useContext(LanguageContext);
@@ -23,7 +24,6 @@ const Hero = () => {
             {language === "RU" 
             ? "Привет, мы " 
             : "Hey, it's "}
-            
             <span className="text-[#56ccf2]">
             {language === "RU" 
             ? "АкадемИИя" 
@@ -32,10 +32,12 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} font-medium lg:text-[30px] sm:text-[26px] xs:_ext-[20px] text-[16px] lg:leading-[40px] mt-2 text-black`}>
             {language === "RU"
-              ? "Мы разрабатываем курсы"
-              : "We're developing courses"}
-            <br className="sm:block hidden" />&nbsp;
-            {language === "RU" ? "и приложения" : "and software"}
+              ? "Мы разрабатываем курсы "
+              : "We're developing courses "}
+            <br className="sm:block hidden" />
+            {language === "RU" 
+              ? "и приложения" 
+              : "and software"}
           </p>
         </div>
       </div>

@@ -51,7 +51,7 @@ import {
     },
   ];
   
-  const companies = [
+  const partners = [
     {
       name: "Sberbank",
       icon: sber,
@@ -244,4 +244,4 @@ import {
     //....другие projects схожей структуры
   ];
   
-  export { services, companies, products, testimonials, projects };
+  export { services, partners, products, testimonials, projects };

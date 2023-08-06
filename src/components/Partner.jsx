@@ -5,13 +5,13 @@ import { textVariant } from '../utils/motion';
 import { styles } from '../styles';
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
-import { companies } from "../constants";
+import { partners } from "../constants";
 import { LanguageContext } from "../LanguageContext";
 
-const Tech = () => {
+const Partner = () => {
 
   const { language } = useContext(LanguageContext);
-  const icons = Object.values(companies).map((company) => company.icon);
+  const icons = Object.values(partners).map((partner) => partner.icon);
 
   return (
     <>
@@ -34,4 +34,4 @@ const Tech = () => {
   );
 };
 
-export default SectionWrapper(Tech, "");
+export default SectionWrapper(Partner, "");
