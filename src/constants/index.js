@@ -10,9 +10,9 @@ import {
     amiks,
     bi,
 
-    neurengine,
-    qr,
-    academya,
+    q1,
+    q2,
+    q3,
   } from "../assets";
 
 
@@ -23,8 +23,12 @@ import {
       title: ["О нас", "About"]
     },
     {
-      id: "product",
-      title: ["Продукты", "Products"]
+      id: "projects",
+      title: ["Проекты", "Projects"]
+    },
+    {
+      id: "roadmap",
+      title: ["Дорожная карта", "Roadmap"]
     },
     {
       id: "contact",
@@ -46,7 +50,7 @@ import {
       icon: mobile,
     },
     {
-      title: ["IT Курсы", "IT Courses"],
+      title: ["Курсы", "Courses"],
       icon: creator,
     },
   ];
@@ -74,47 +78,48 @@ import {
     },
   ];
   
-  const products = [
+  const roadmapitems = [
     {
-      title: ["Нейродвижок", "Neurengine"],
-      status: ["MVP v0.1.0","MVP v0.1.0"],
-      icon: neurengine,
-      iconBg: "#000000",
-      model: ["Freemium","Freemium"],
-      points: [
-        ["Работает на основе ChatGPT.","Runs on ChatGPT."],
-        ["Помнит контекст, генерирует изображения и отвечает на голосовые сообщения.","Remembers context, generates images and responds to voice messages."],
-        ["Поддерживает API вызовы к другим сервисам через вызов функций.", "Supports API calls to other services via function calling."],
-        ["Поддерживает AutoGPT режим.", "Supports AutoGPT mode."],
-        ["Имеет удобный интерфейс в виде Telegram бота.", "Has a convenient interface in the form of Telegram bot."],
-      ],
-    },
-    {
-      title: ["Учет товаров по QR кодам", "Goods record by QR codes"],
-      status: ["MVP v0.1.0","MVP v0.1.0"],
-      icon: qr,
-      iconBg: "#000000",
-      model: ["Транзакционная","Transaction"],
-      points: [
-        ["Генерирует новые QR-коды для маркировки товаров и контейнеров.", "Generates new QR codes for goods and containers labeling."],
-        ["Хранит содержимое контейнеров и описание изделий в базе данных.","Stores the contents of containers and product descriptions in the database."],
-        ["Определяет содержимое контейнера на основании распознанной маркировки.", "Determines the contents of the container based on the recognized markings."],
-        ["Определяет принадлежность изделия конкретному контейнеру по его характеристикам.", "Determines whether the product belongs to a specific container according to its characteristics."],
-        ["Имеет удобный интерфейс в виде мобильного приложения под iOS и Android.", "Has a convenient interface in the form of a mobile application for iOS and Android."],
-        ["Есть API. Работает с Нейродвижком.", "Has API. Works with Neurengine."],
-      ],
-    },
-    {
-      title: ["АкадемИИя", "AcademYA"],
-      status: ["Прототип", "Prototype"],
-      icon: academya,
+      title: ["Краткосрочные цели", "Short-term goals"],
+      year: ['2023'],
+      icon: q1,
       iconBg: "#fff",
-      model: ["EdTech Маркетплейс","EdTech Marketplace"],
+      quarters: ["Q3","Q4"],
       points: [
-        ["Позволяет создавать и размещать свои курсы.","Allows to create and place your own courses."],
-        ["Позволяет самостоятельно управлять ценой курсов.","Allows to controle the price of the courses."],
-        ["Оставляет права на контент за вами.", "Reserves the rights to the content for you."],
-        ["Есть API. Позволяет учиться вместе с Нейродвижком.", "Has API. Allows to study with Neurengine."],
+        ["Пройти 10 спринтов в акселераторе. Научиться дизайну мышления и заполнить дневник проекта. Создать презентацию Elevator Pitch.", "Pass 10 accelerator sprints. Learn to design thinking and fill out the project diary. Create an Elevator Pitch presentation."],
+        ["Выложить на доске MIRO всю информацию по экосистеме, бизнесмодели, рынку и т.д.", "Publish on MIRO all the information about the ecosystem, business models, market and so on."],
+        ["Разработать с нуля сервис QRecord для 'Прогресс'. Получить первого партнера и продажу.", "Develop a QRecord service for 'Progress'. Get first partner and a sale."],
+        ["Запустить лендинг, бота в Telegram, образовательную платформу.","Launch a landing page, Telegram bot, educational platform."],
+        ["Подать заявку на программу молодых исследователей 'Умник'.","Submit a request to 'Umnik' researcher program."],
+        ["Пройти СберСтудент акселлератор. Получить pre-seed инвестиции.","Pass the SberStudent accelerator. Get pre-seed investment."],
+      ],
+    },
+    {
+      title: ["Среднесрочные цели", "Medium-term goals"],
+      year: ['2024'],
+      icon: q2,
+      iconBg: "#fff",
+      quarters: ["Q1","Q2","Q3"],
+      points: [
+        ["Получение средств на реализацию заявки по программе 'Умник'.","Getting funds for the implementation of the request for the 'Umnik' program."],
+        ["Закупка оборудования для хостинга локальной языковой модели.","Purchase of equipment for hosting the our own large language model."],
+        ["Доработка Telegram бота. Развитие образовательной платформы.","Improving Telegram bot. Development of educational platform."],
+        ["Продвижение и PR. Формирование стратегии и бюджета на продвижение.","Promotion and PR. Forming a strategy and budget for promotion."],
+      ],
+    },
+    {
+      title: ["Долгосрочные цели", "Long-term goals"],
+      year: ["2024", "2025"],
+      icon: q3,
+      iconBg: "#fff",
+      quarters: ["Q4","Q1","Q2", "Q3"],
+      points: [
+        ["Регистрация ООО.", "Registration of a company."],
+        ["Участие в других программах фонда содействия инновациям (Студенческий стартап, Старт).","Participation in other programs of the fund supporting innovation (Student's Startup, Start)."],
+        ["Развитие новых проектов.","Development of new projects."],
+        ["Раунд Seed инвестиций.","Seed investment round."],
+        ["Новые партнерства и контакты.","New partnerships and contacts."],
+        ["Разработать стратегию и провести выход на IPO.","Develop a strategy and conduct an IPO."],
       ],
     },
   ];
@@ -148,10 +153,54 @@ import {
   
   const projects = [
     {
+      name: ["ВКурсе", "YouKnow"],
+      description:
+      ["Образовательная платформа нацеленная на пользовательский опыт и интеграцию с Нейродвижком. Главная фишка - автоматическая генерация курсов.", 
+      "Educational platform focused on user experience and integration with Neurengine. Main feature - automated course generation."],
+      tags: [
+        {
+          name: "typescript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwindcss",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "prisma",
+          color: "green-text-gradient",
+        },
+        {
+          name: "mysql",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "openai",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "youtube",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "unsplash",
+          color: "pink-text-gradient",
+        },
+      ],
+      repos: [
+        {
+          name: ["Бизнес-модель: Freemium","Freemium Business Model"],
+        },
+
+      ],
+      image: "https://i.ibb.co/99qKPjj/youknow.jpg",
+      //link: "https://github.com/AcademAI/ALLM",
+    },
+    {
       name: ["Нейродвижок", "Neurengine"],
       description: 
-      ["Telegram бот на основе ChatGPT. Позволяет генерировать изображения, отвечает на голосовые сообщения, подключена платежная система. Сейчас пробуем внедрять Function Calling от OpenAI через плагины и тестируем AutoGPT версию.",
-       "Telegram bot based on ChatGPT. Allows you to generate images, responds to voice messages, a payment system is connected. Currently we're trying to implement OpenAI Function Calling via plugins and testing the AutoGPT version."],
+      ["ChatGPT-подобный бот на платформе Telegram. Позволяет генерировать изображения, отвечает на голосовые сообщения, подключена платежная система. Умеет извлекать данные из других наших сервисов.",
+       "ChatGPT-like bot on the Telegram platform. Allows you to generate images, responds to voice messages, a payment system is connected. Able to extract data from our other services."],
       tags: [
         {
           name: "python",
@@ -159,7 +208,7 @@ import {
         },
         {
           name: "mongodb",
-          color: "green-text-gradient",
+          color: "orange-text-gradient",
         },
         {
           name: "openai",
@@ -167,24 +216,22 @@ import {
         },
         {
           name: "telegram",
-          color: "orange-text-gradient",
+          color: "pink-text-gradient",
         },
       ],
       repos: [
         {
-          name: ["Приватный Репо","Private Repo"],
-        },
-        {
-          name: ["Очень Активный", "Heavily Active"],
+          name: ["Бизнес-модель: Freemium","Freemium Business Model"],
         },
       ],
-      image: "https://i.ibb.co/J2rc4GF/Screenshot-4.png",
+      image: "https://i.ibb.co/89fQ2KC/neurengine.png",
+      link: "https://t.me/NeurengineBot",
     },
     {
-      name: ["API сервисов", "Services API"],
+      name: ["QRecord", "QRecord"],
       description: 
-      ["Связующее звено всех сервисов в нашей экосистеме. Один из ключевых компонентов системы позволяющий Нейродвижку обращаться к любому сервису с API.",
-       "The connecting link of all services in our ecosystem. One of the key components of the system allows the Neuroengine to access any service with an API."],
+      ["Приложение для хранения и управления контейнерами и товарами. Разработано под iOS и Android. Имеется API.",
+       "App for storing and managing containers and products. Developed for iOS and Android. Has an API."],
       tags: [
         {
           name: "python",
@@ -194,54 +241,21 @@ import {
           name: "fastapi",
           color: "green-text-gradient",
         },
-      ],
-      repos: [
         {
-          name: ["Приватный Репо","Private Repo"],
-        },
-        {
-          name: ["Активный", "Active"],
-        },
-      ],
-      image: "https://i.ibb.co/zGcL6R3/API.png",
-    },
-    {
-      name: ["АкадемИИя", "AcademYA"],
-      description:
-      ["Образовательный маркетплейс нацеленный на пользовательский опыт и интеграцию с Нейродвижком. Сейчас пишем конструктор курсов и API к базе данных.", 
-      "Educational marketplace focused on user experience and integration with Neurengine. Now we are writing a course builder and an API for the database."],
-      tags: [
-        {
-          name: "php",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "javascript",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "mysql",
-          color: "green-text-gradient",
-        },
-        {
-          name: "bootstrap",
+          name: "mongodb",
           color: "orange-text-gradient",
         },
       ],
       repos: [
         {
-          name: ["Публичный Репо","Public Repo"],
-        },
-        {
-          name: ["Менее Активный", "Less Active"],
+          name: ["Бизнес-модель: Транзакционная","Transactional Business Model"],
         },
       ],
-      image: "https://i.ibb.co/NtVM1rp/logo-init.png",
-      source_code_link: "https://github.com/AcademAI/ALLM",
+      image: "https://i.ibb.co/s5BwdQ0/qrcodes.png",
+      link: "https://drive.google.com/file/d/1N_RQ7_lOE_TizyiiLWSw43b2Ud3O4vWS/view?usp=drive_link",
     },
-    
 
     //....другие projects схожей структуры
   ];
   
-  export { services, partners, products, testimonials, projects };
+  export { services, partners, roadmapitems, testimonials, projects };

@@ -5,8 +5,8 @@ import About from './About'
 import Contact from './Contact'
 import CanvasLoader from "./Loader";
 import Partner from './Partner';
-import Products from './Products';
-import Works from './Works';
+import Roadmap from './Roadmap';
+import Projects from './Projects';
 //import Feedbacks from './Feedbacks';
 //import Contact from './Contact';
 
@@ -16,8 +16,8 @@ export {
   About,
   CanvasLoader,
   Partner,
-  Products,
-  Works,
+  Roadmap,
+  Projects,
   //Feedbacks,
   Contact,
   EarthCanvas, 
