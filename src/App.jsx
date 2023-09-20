@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import { Navbar, Hero, About, Roadmap, Partner, Projects } from "./components";
+import { Navbar, Hero, About, Roadmap, Partner, Projects, Team, Contact, StarsCanvas } from "./components";
 import { LanguageProvider } from "./LanguageContext";
 
 const App = () => {
@@ -11,12 +11,14 @@ const App = () => {
           <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center h-[100%]">
             <Hero />
           </div>
-          <About/>
+          <About />
           <Projects />
-          <Roadmap/>
+          <Roadmap />
           <Partner />
-          
-          {/*<Contact/>*/}
+          <Team />
+          <div className='relative z-0'>
+            <Contact />
+          </div>
         </div>
       </LanguageProvider>
     </BrowserRouter>

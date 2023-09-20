@@ -62,11 +62,10 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <li
               key={link.id}
-              className={`${
-                active === link.title[language === "RU" ? 0 : 1]
+              className={`${active === link.title[language === "RU" ? 0 : 1]
                   ? "text-black"
                   : "text-secondary"
-              } hover:text-black text-[18px]
+                } hover:text-black text-[18px]
                   font-medium cursor-pointer`}
               onClick={() => setActive(link.title[language === "RU" ? 0 : 1])}
             >
@@ -97,9 +96,8 @@ const Navbar = () => {
           />
 
           <div
-            className={`${
-              !toggle ? "hidden" : "flex"
-            } p-6 menu-gradient absolute top-20 
+            className={`${!toggle ? "hidden" : "flex"
+              } p-6 menu-gradient absolute top-20 
             right-0 mx-4 my-2 min-w-[140px] 
             z-10 rounded-xl`}
           >
@@ -107,11 +105,10 @@ const Navbar = () => {
               {navLinks.map((link) => (
                 <li
                   key={link.id}
-                  className={`${
-                    active === link.title[language === "RU" ? 0 : 1]
+                  className={`${active === link.title[language === "RU" ? 0 : 1]
                       ? "text-black"
                       : "text-secondary"
-                  } font-poppins font-medium cursor-pointer text-[16px]`}
+                    } font-poppins font-medium cursor-pointer text-[16px]`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(link.title[language === "RU" ? 0 : 1]);

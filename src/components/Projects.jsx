@@ -57,15 +57,15 @@ const ProjectCard = ({
         </div>
 
         <div className='mt-5'>
-          <h3 className='text-black font-bold text-[24px]'>{name[language === "RU" ? 0: 1]}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description[language === "RU" ? 0: 1]}</p>
+          <h3 className='text-black font-bold text-[24px]'>{name[language === "RU" ? 0 : 1]}</h3>
+          <p className='mt-2 text-secondary text-[14px]'>{description[language === "RU" ? 0 : 1]}</p>
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
           <span className="green-pink-gradient text-black bg-blue-100  text-sm font-medium mr-2 px-2.5 py-0.5 rounded ">
-            {repos[0].name[language === "RU" ? 0: 1]}
+            {repos[0].name[language === "RU" ? 0 : 1]}
           </span>
-          
+
         </div>
 
         <div className='mt-4 flex flex-wrap gap-2'>
@@ -86,7 +86,7 @@ const ProjectCard = ({
 const Projects = () => {
   const { language } = useContext(LanguageContext);
   return (
-    
+
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>{language === "RU" ? "Экосистема" : "Ecosystem"}</p>
@@ -98,9 +98,9 @@ const Projects = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          {language === "RU" 
-          ? "Ниже представлены карточки наших проектов. Каждый проект нуждается в заинтересованных людях, готовых помочь нам их развивать, запускать и масштабировать ." 
-          : "Below are the cards of our projects. Each project needs interested people to help them grow, launch, and scale."}
+          {language === "RU"
+            ? "Ниже представлены карточки наших проектов. Каждый проект нуждается в заинтересованных людях, готовых помочь нам их развивать, запускать и масштабировать ."
+            : "Below are the cards of our projects. Each project needs interested people to help them grow, launch, and scale."}
         </motion.p>
       </div>
 
