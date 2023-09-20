@@ -124,30 +124,34 @@ import {
     },
   ];
   
-  const testimonials = [
+  const members = [
     {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+      description:
+      ["Руководитель команды АкадемИИя. Студент бакалавриата выпускного курса, направление ИСТ. Веб и бэкэнд разработчик.", "Head of the AcademYa team. Student of the final year of the bachelor's program of Information Systems. Web and backend developer."],
+      name: ["Ясеновец Артур", "Yasenovets Artur"],
+      role: "CEO",
+      //image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+      description:
+      ["Участник команды АкадемИИя. Студент бакалавриата 3 курса, направление ИВТ. Чемпион Коми по шахматам. Специалист в области ML и AI.", "Member of the AcademYa team. Student of the 3rd year of the bachelor's program of Information Computer Engineering. Chess champion of the Komi Republic. Specialist in the field of ML and AI."],
+      name: ["Стрюков Павел", "Strukov Pavel"],
+      role: "CTO",
+      //image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+      description:
+      ["Участник команды АкадемИИя. Студент бакалавриата 3 курса, направление ИВТ. Специалист по алгоритмам и структурам данных. Бэкэнд разработчик.", "Member of the AcademYa team. Student of the 3rd year of the bachelor's program of Information Computer Engineering. Specialist in algorithms and data structures. Backend developer."],
+      name: ["Герберт Денис", "Gerbert Denis"],
+      role: "Software Engineer",
+      //image: "https://randomuser.me/api/portraits/women/6.jpg",
+    },
+    {
+      description:
+      ["Участник команды АкадемИИя. Студент колледжа выпускного курса. Специалист в веб-безопасности.", "Member of the AcademYa team. Student of the final year of the college. Specialist in web security."],
+      name: ["Сотников Иван", "Sotnikov Ivan"],
+      role: "Security Engineer", 
+      //image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
   
@@ -258,4 +262,4 @@ import {
     //....другие projects схожей структуры
   ];
   
-  export { services, partners, roadmapitems, testimonials, projects };
+  export { services, partners, roadmapitems, members, projects };

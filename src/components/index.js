@@ -7,6 +7,7 @@ import CanvasLoader from "./Loader";
 import Partner from './Partner';
 import Roadmap from './Roadmap';
 import Projects from './Projects';
+import Team from './Team';
 //import Feedbacks from './Feedbacks';
 //import Contact from './Contact';
 
@@ -18,6 +19,7 @@ export {
   Partner,
   Roadmap,
   Projects,
+  Team,
   //Feedbacks,
   Contact,
   EarthCanvas, 
