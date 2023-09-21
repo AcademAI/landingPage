@@ -18,6 +18,7 @@ const App = () => {
           <Team />
           <div className='relative z-0'>
             <Contact />
+            <StarsCanvas />
           </div>
         </div>
       </LanguageProvider>

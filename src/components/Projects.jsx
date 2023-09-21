@@ -99,7 +99,7 @@ const Projects = () => {
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
           {language === "RU"
-            ? "Ниже представлены карточки наших проектов. Каждый проект нуждается в заинтересованных людях, готовых помочь нам их развивать, запускать и масштабировать ."
+            ? "Ниже представлены карточки наших проектов. Каждый проект нуждается в заинтересованных людях, готовых помочь нам их развивать, запускать и масштабировать."
             : "Below are the cards of our projects. Each project needs interested people to help them grow, launch, and scale."}
         </motion.p>
       </div>
