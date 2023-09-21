@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useContext } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
@@ -6,6 +6,8 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { LanguageContext } from "../LanguageContext";
+
 
 const Contact = () => {
   const formRef = useRef();
@@ -28,6 +30,7 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
+
     e.preventDefault();
     setLoading(true);
 
@@ -39,7 +42,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "AcademYa landing",
           from_email: form.email,
-          to_email: "academai.company@gmail.com",
+          to_email: "edurailco@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -47,7 +50,7 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Спасибо, мы с вами свяжемся в ближайшее время.");
+          alert(`${language === "RU" ? "Спасибо, мы свяжемся в ближайшиее время." : "Thank you, we'll get back to you soon."}`);
 
           setForm({
             name: "",
@@ -59,10 +62,12 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Что-то пошло не так. Попробуйте снова.");
+          alert(`${language === "RU" ? "Что-то пошло не так. Попробуйте снова." : "Something went wrong. Try again."}`);
         }
       );
   };
+
+  const { language } = useContext(LanguageContext);
 
   return (
     <div
@@ -72,8 +77,8 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <p className={styles.sectionSubText}>{language === "RU" ? "Есть предложение?" : "Have a suggestion?"}</p>
+        <h3 className={styles.sectionHeadText}>{language === "RU" ? "Связаться" : "Contact"}</h3>
 
         <form
           ref={formRef}
@@ -81,36 +86,36 @@ const Contact = () => {
           className='mt-12 flex flex-col gap-8'
         >
           <label className='flex flex-col'>
-            <span className='text-black font-medium mb-4'>Ваше имя</span>
+            <span className='text-black font-medium mb-4'>{language === "RU" ? "Ваше имя" : "Your name"}</span>
             <input
               type='text'
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="Как вас зовут?"
+              placeholder={language === "RU" ? "Как вас зовут" : "What's your name?"}
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-black font-medium mb-4'>Ваша почта</span>
+            <span className='text-black font-medium mb-4'>{language === "RU" ? "Ваша почта" : "Your email"}</span>
             <input
               type='email'
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="Какой у вас адрес?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              placeholder={language === "RU" ? "Какой у вас адрес?" : "What's your email?"}
+              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-black font-medium mb-4'>Ваше сообщение</span>
+            <span className='text-black font-medium mb-4'>{language === "RU" ? "Ваше сообщение" : "Your message"}</span>
             <textarea
               rows={7}
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder='Что вы хотите сказать?'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              placeholder={language === "RU" ? "Что вы хотите сказать?" : "What do you want to say?"}
+              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium'
             />
           </label>
 
@@ -118,7 +123,7 @@ const Contact = () => {
             type='submit'
             className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-secondary font-bold shadow-md shadow-primary'
           >
-            {loading ? "Отправляю..." : "Отправлено."}
+            {loading ? `${language === "RU" ? "Отправляю..." : "Sending..."}` : `${language === "RU" ? "Отправить" : "Send"}`}
           </button>
         </form>
       </motion.div>
