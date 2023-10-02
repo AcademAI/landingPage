@@ -49,12 +49,12 @@ const Navbar = () => {
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-black text-[18px] font-bold cursor-pointer flex">
-            {language === "RU" ? "АкадемИИя" : "AcademYA"}&nbsp;
+            {language === "RU" ? "АкадемИИя" : "AcademAI"}&nbsp;
             <span className="sm:block hidden">
               |&nbsp;
               {language === "RU"
-                ? "Разработка & курсы"
-                : "Development & courses"}
+                ? "Разработка 'LLM-based' сервисов"
+                : "Development of 'LLM-based' services"}
             </span>
           </p>
         </Link>

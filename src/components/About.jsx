@@ -54,8 +54,8 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         {language === "RU"
-          ? "Мы — команда разработчиков, специализирующихся на LLM, разработке бэкэнд сервисов и веб приложений. Имея большой опыт работы с Python и JavaScript, мы преуспеваем в создании надежных и масштабируемых решений с использованием различных фреймворков и библиотек. В свободное время мы упаковываем наши знания в курсы."
-          : "We are a team of skilled software developers specializing in LLMs, backend services development, and web applications. With extensive experience in Python and JavaScript, we excel in creating robust and scalable solutions using different frameworks and libraries. In our spare time we pack our knowledge into courses."}
+          ? "Мы — команда разработчиков, специализирующихся на LLM, разработке бэкэнд сервисов и веб приложений. Имея большой опыт работы с Python и JavaScript, мы преуспеваем в создании надежных и масштабируемых решений с использованием различных фреймворков и библиотек. В свободное время мы участвуем в акселераторах и хакатонах."
+          : "We are a team of skilled software developers specializing in LLMs, backend services development, and web applications. With extensive experience in Python and JavaScript, we excel in creating robust and scalable solutions using different frameworks and libraries. In our spare time we participate in accelerators and hackathons."}
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
