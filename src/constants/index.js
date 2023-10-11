@@ -198,7 +198,7 @@ import {
 
       ],
       image: "https://i.ibb.co/99qKPjj/youknow.jpg",
-      //link: "https://github.com/AcademAI/ALLM",
+      link: "https://youknow.academai.ru",
     },
     {
       name: ["Нейродвижок", "Neurengine"],
