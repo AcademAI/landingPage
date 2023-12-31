@@ -1,0 +1,21 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Production:
+    name: Deploy to Homelab
+    runs-on: ubuntu-latest
+    environment: Production
+    steps:
+      - name: Cloudflared SSH Run Remote Commands
+        uses: npgy/cloudflared-ssh-action@v2.0
+        with:
+          host: ${{ vars.SSH_HOST }}
+          username: ${{ secrets.USER_NAME }}
+          private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.PORT }}
+          commands: cd /root/landingPage; git reset --hard; git checkout main; git pull origin main; docker stop landingPage; docker rm landingPage; docker rmi landingPageImg; docker build -t landingPageImg .; docker run --detach --network tunnel --name landingPage landingPageImg; docker image prune -a -f
