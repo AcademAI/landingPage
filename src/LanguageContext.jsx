@@ -6,7 +6,7 @@ export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState('RU'); // состояние выбранного языка
 
   const handleLanguageChange = () => {
-    // функция для изменения языка
+    // функция для изменения языка 
     setLanguage(language === 'RU' ? 'ENG' : 'RU');
   };
 
