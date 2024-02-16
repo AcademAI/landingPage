@@ -169,7 +169,7 @@ const members = [
     ],
     name: ["soitends", "soitends"],
     role: "swiss knife",
-    image: "https://i.ibb.co/BcTN9J7/sunboy.jpg",
+    image: "https://i.ibb.co/ZSnK6d0/hqdefault-502646920.jpg",
   },
   {
     description: [
