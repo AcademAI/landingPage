@@ -1,0 +1,12 @@
+version: '3'
+services:
+  landing:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+
+networks:
+  default:
+    external: true
+    name: npm
