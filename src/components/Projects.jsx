@@ -18,7 +18,6 @@ const ProjectCard = ({
   image,
   link,
 }) => {
-
   const { language } = useContext(LanguageContext);
 
   return (
@@ -29,46 +28,49 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-primary p-5 rounded-2xl sm:w-[360px] w-full shadow-card'
+        className="bg-primary p-5 rounded-2xl sm:w-[360px] w-full shadow-card"
       >
-        <div className='relative w-full h-[230px]'>
+        <div className="relative w-full h-[230px]">
           <img
-            draggable='false'
+            draggable="false"
             src={image}
-            alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
+            alt="project_image"
+            className="w-full h-full object-cover rounded-2xl"
           />
 
           {link && (
-            <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+            <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
               <div
                 onClick={() => window.open(link, "_blank")}
-                className='menu-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+                className="menu-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               >
                 <img
-                  draggable='false'
+                  draggable="false"
                   src={globe}
-                  alt='source code'
-                  className='w-1/2 h-1/2 object-contain'
+                  alt="source code"
+                  className="w-1/2 h-1/2 object-contain"
                 />
               </div>
             </div>
           )}
         </div>
 
-        <div className='mt-5'>
-          <h3 className='text-black font-bold text-[24px]'>{name[language === "RU" ? 0 : 1]}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description[language === "RU" ? 0 : 1]}</p>
+        <div className="mt-5">
+          <h3 className="text-black font-bold text-[24px]">
+            {name[language === "RU" ? 0 : 1]}
+          </h3>
+          <p className="mt-2 text-secondary text-[14px]">
+            {description[language === "RU" ? 0 : 1]}
+          </p>
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
           <span className="green-pink-gradient text-black bg-blue-100  text-sm font-medium mr-2 px-2.5 py-0.5 rounded ">
             {repos[0].name[language === "RU" ? 0 : 1]}
           </span>
-
         </div>
 
-        <div className='mt-4 flex flex-wrap gap-2'>
+        <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
@@ -86,17 +88,20 @@ const ProjectCard = ({
 const Projects = () => {
   const { language } = useContext(LanguageContext);
   return (
-
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>{language === "RU" ? "Экосистема" : "Ecosystem"}</p>
-        <h2 className={`${styles.sectionHeadText}`}>{language === "RU" ? "Наши проекты" : "Our projects"}</h2>
+        <p className={`${styles.sectionSubText} `}>
+          {language === "RU" ? "Экосистема" : "Ecosystem"}
+        </p>
+        <h2 className={`${styles.sectionHeadText}`}>
+          {language === "RU" ? "Наши проекты" : "Our projects"}
+        </h2>
       </motion.div>
 
-      <div className='w-full flex'>
+      <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           {language === "RU"
             ? "Ниже представлены карточки наших проектов. Каждый проект нуждается в заинтересованных людях, готовых помочь нам их развивать, запускать и масштабировать."
@@ -104,7 +109,7 @@ const Projects = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

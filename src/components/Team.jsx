@@ -7,7 +7,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { members } from "../constants";
 import { LanguageContext } from "../LanguageContext";
 
-const TeamCard = ({ index, description, name, role, image, link }) => {
+const TeamCard = ({ index, description, skills, name, role, image, link }) => {
   const { language } = useContext(LanguageContext);
 
   return (
@@ -26,11 +26,29 @@ const TeamCard = ({ index, description, name, role, image, link }) => {
             </p>
             <p className="mt-1 text-secondary text-[12px]">{role}</p>
           </div>
-          <img
-            src={image}
-            alt={`feedback_by-${name}`}
-            className="w-20 h-20 rounded-full object-cover"
-          />
+          <div className="">
+            {link ? (
+              <div className="">
+                <div onClick={() => window.open(link, "_blank")} className="">
+                  <img
+                    draggable="false"
+                    src={image}
+                    alt={`feedback_by-${name}`}
+                    className="w-20 h-20 rounded-full object-cover cursor-pointer"
+                  />
+                </div>
+              </div>
+            ) : (
+              <div className="">
+                <img
+                  draggable="false"
+                  src={image}
+                  alt={`feedback_by-${name}`}
+                  className="w-20 h-20 rounded-full object-cover cursor-pointer"
+                />
+              </div>
+            )}
+          </div>
         </div>
         <p className="text-black tracking-wider text-[18px]">
           {description[language === "RU" ? 0 : 1]}

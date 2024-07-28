@@ -7,6 +7,7 @@ import globe from "./globe.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import langswitch from "./langswitch.svg";
+import telegram from "./telegram.svg";
 import heroImage from "./herobg.png";
 
 import sber from "./tech/sber.png";
@@ -24,6 +25,7 @@ export {
   logo,
   heroImage,
   langswitch,
+  telegram,
   backend,
   creator,
   mobile,

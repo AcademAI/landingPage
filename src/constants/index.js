@@ -34,7 +34,7 @@ export const navLinks = [
 ];
 
 const services = [
-  { 
+  {
     title: ["Full Stack сервисы", "Full Stack services"],
     icon: web,
   },
@@ -164,19 +164,18 @@ const roadmapitems = [
 const members = [
   {
     description: [
-      "FullStack Developer. DevOps. AI security research.",
-      "Back/front, devops and infosec..",
+      "FullStack разработчик. DevOps. Исследователь безопасности ИИ.",
+      "FullStack Developer. DevOps. AI security researcher.",
     ],
-    skills: [],
     name: ["artias13", "artias13"],
     role: "Full Stack",
-    image: "../src/assets/team/artias13.png",
+    image: "https://i.ibb.co/JRFQs65/headshot-circle.png",
     link: "https://artias13.github.io",
   },
   {
     description: [
-      "ML. Шахматы. Математика.",
-      "Python. ML. Chess. Math. ",
+      "Python разработчик. Машинное обучение. Исследователь ИИ.",
+      "Python developer. Machine learning. AI researcher.",
     ],
     name: ["alt_tanger", "alt_tanger"],
     role: "ML engineer",
@@ -184,8 +183,8 @@ const members = [
   },
   {
     description: [
-      "Предводитель в мире животных. Бэкэнд.",
-      "Head of the animal world. Backend.",
+      "Python backend разработчик. Алгоритмы и структуры данных. Исследователь ИИ.",
+      "Python backend. Algorithms and data structures. AI researcher.",
     ],
     name: ["pesos603", "pesos603"],
     role: "Back end",
@@ -193,8 +192,8 @@ const members = [
   },
   {
     description: [
-      "Слышали про Anonymous? Он основал.",
-      "Heard about Anonymous? He founded.",
+      "Энтузиаст информационной безопасности. CTF игрок.",
+      "CyberSecurity enthusiast. CTF player.",
     ],
     name: ["N4m3L3ss_kiddie", "N4m3L3ss_kiddie"],
     role: "Infosec",
@@ -277,7 +276,7 @@ const projects = [
       },
     ],
     image: "https://i.ibb.co/89fQ2KC/neurengine.png",
-    //link: "https://t.me/NeurengineBot",
+    link: "https://t.me/NeurengineBot",
   },
   {
     name: ["QRecord", "QRecord"],

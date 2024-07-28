@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, langswitch, menu, close } from "../assets";
+import { logo, langswitch, telegram, menu, close } from "../assets";
 
 import { LanguageContext } from "../LanguageContext";
 
@@ -52,9 +52,7 @@ const Navbar = () => {
             {language === "RU" ? "AcademAI" : "AcademAI"}&nbsp;
             <span className="sm:block hidden">
               |&nbsp;
-              {language === "RU"
-                ? "R&D команда по ИИ"
-                : "AI R&D team"}
+              {language === "RU" ? "R&D команда по ИИ" : "AI R&D team"}
             </span>
           </p>
         </Link>
@@ -62,10 +60,11 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <li
               key={link.id}
-              className={`${active === link.title[language === "RU" ? 0 : 1]
+              className={`${
+                active === link.title[language === "RU" ? 0 : 1]
                   ? "text-black"
                   : "text-secondary"
-                } hover:text-black text-[18px]
+              } hover:text-black text-[18px]
                   font-medium cursor-pointer`}
               onClick={() => setActive(link.title[language === "RU" ? 0 : 1])}
             >
@@ -85,6 +84,16 @@ const Navbar = () => {
               className="w-[36px] h-[36px] object-contain cursor-pointer"
             />
           </div>
+          <div
+            className={` flex items-center ${clicked ? "clicked" : ""}`}
+            onClick={() => window.open("t.me/academ_ai", "_blank")}
+          >
+            <img
+              src={telegram}
+              alt=""
+              className="w-[36px] h-[36px] object-contain cursor-pointer"
+            />
+          </div>
         </ul>
 
         <div className="lg:hidden flex flex-1 justify-end items-center">
@@ -96,8 +105,9 @@ const Navbar = () => {
           />
 
           <div
-            className={`${!toggle ? "hidden" : "flex"
-              } p-6 menu-gradient absolute top-20 
+            className={`${
+              !toggle ? "hidden" : "flex"
+            } p-6 menu-gradient absolute top-20 
             right-0 mx-4 my-2 min-w-[140px] 
             z-10 rounded-xl`}
           >
@@ -105,10 +115,11 @@ const Navbar = () => {
               {navLinks.map((link) => (
                 <li
                   key={link.id}
-                  className={`${active === link.title[language === "RU" ? 0 : 1]
+                  className={`${
+                    active === link.title[language === "RU" ? 0 : 1]
                       ? "text-black"
                       : "text-secondary"
-                    } font-poppins font-medium cursor-pointer text-[16px]`}
+                  } font-poppins font-medium cursor-pointer text-[16px]`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(link.title[language === "RU" ? 0 : 1]);
@@ -126,6 +137,16 @@ const Navbar = () => {
               >
                 <img
                   src={langswitch}
+                  alt=""
+                  className="w-[36px] h-[36px] object-contain cursor-pointer"
+                />
+              </div>
+              <div
+                className={` flex items-center ${clicked ? "clicked" : ""}`}
+                onClick={() => window.open("https://t.me/academ_ai", "_blank")}
+              >
+                <img
+                  src={telegram}
                   alt=""
                   className="w-[36px] h-[36px] object-contain cursor-pointer"
                 />
