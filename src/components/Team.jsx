@@ -7,7 +7,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { members } from "../constants";
 import { LanguageContext } from "../LanguageContext";
 
-const TeamCard = ({ index, description, skills, name, role, image, link }) => {
+const TeamCard = ({ index, description, name, role, image, link }) => {
   const { language } = useContext(LanguageContext);
 
   return (

@@ -16,7 +16,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
-        setNavbarStyle("bg-primary");
+        setNavbarStyle("backdrop-blur-md");
       } else {
         setNavbarStyle("bg-transparent");
       }
@@ -84,15 +84,14 @@ const Navbar = () => {
               className="w-[36px] h-[36px] object-contain cursor-pointer"
             />
           </div>
-          <div
-            className={` flex items-center ${clicked ? "clicked" : ""}`}
-            onClick={() => window.open("t.me/academ_ai", "_blank")}
-          >
-            <img
-              src={telegram}
-              alt=""
-              className="w-[36px] h-[36px] object-contain cursor-pointer"
-            />
+          <div className="flex items-center ">
+            <a target="_blank" href="https://t.me/academ_ai">
+              <img
+                src={telegram}
+                alt=""
+                className="w-[36px] h-[36px] object-contain cursor-pointer"
+              />
+            </a>
           </div>
         </ul>
 
@@ -141,15 +140,14 @@ const Navbar = () => {
                   className="w-[36px] h-[36px] object-contain cursor-pointer"
                 />
               </div>
-              <div
-                className={` flex items-center ${clicked ? "clicked" : ""}`}
-                onClick={() => window.open("https://t.me/academ_ai", "_blank")}
-              >
-                <img
-                  src={telegram}
-                  alt=""
-                  className="w-[36px] h-[36px] object-contain cursor-pointer"
-                />
+              <div className="flex items-center">
+                <a target="_blank" href="https://t.me/academ_ai">
+                  <img
+                    src={telegram}
+                    alt=""
+                    className="w-[36px] h-[36px] object-contain cursor-pointer"
+                  />
+                </a>
               </div>
             </ul>
           </div>
