@@ -3,11 +3,11 @@ import { createContext, useState } from 'react';
 export const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState('RU'); // состояние выбранного языка
+  const [language, setLanguage] = useState('ENG'); // состояние выбранного языка
 
   const handleLanguageChange = () => {
     // функция для изменения языка 
-    setLanguage(language === 'RU' ? 'ENG' : 'RU');
+    setLanguage(language === 'ENG' ? 'RU' : 'ENG');
   };
 
   return (

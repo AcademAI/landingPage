@@ -26,18 +26,18 @@ const Hero = () => {
             : "Hey, it's "}
             <span className="text-[#56ccf2]">
             {language === "RU" 
-            ? "АкадемИИя" 
+            ? "AcademAI " 
             : "AcademAI"}
             </span>
           </h1>
           <p className={`${styles.heroSubText} font-medium lg:text-[30px] sm:text-[26px] xs:_ext-[20px] text-[16px] lg:leading-[40px] mt-2 text-black`}>
             {language === "RU"
-              ? "Мы разрабатываем приложения "
-              : "We're developing software "}
+              ? "Мы исследуем и разрабатываем "
+              : "We research & develop "}
             <br className="sm:block hidden" />
             {language === "RU" 
-              ? "на основе LLM" 
-              : "based on LLM"}
+              ? "различные ИИ инструменты" 
+              : "various AI tools"}
           </p>
         </div>
       </div>

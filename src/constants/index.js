@@ -24,8 +24,8 @@ export const navLinks = [
     title: ["Проекты", "Projects"],
   },
   {
-    id: "roadmap",
-    title: ["Дорожная карта", "Roadmap"],
+    id: "partner",
+    title: ["Партнеры", "Partners"],
   },
   {
     id: "contact",
@@ -34,21 +34,21 @@ export const navLinks = [
 ];
 
 const services = [
-  {
-    title: ["Софт с LLM", "LLM apps"],
+  { 
+    title: ["Full Stack сервисы", "Full Stack services"],
     icon: web,
   },
   {
-    title: ["Бэкэнд сервисы", "Backend services"],
-    icon: backend,
-  },
-  {
-    title: ["Веб приложения", "Web apps"],
+    title: ["Human-like LLM агенты", "Human-like LLM agents"],
     icon: mobile,
   },
   {
-    title: ["Курсы", "Courses"],
+    title: ["Исследование безопасности ИИ", "AI security research"],
     icon: creator,
+  },
+  {
+    title: ["DevOps", "DevOps"],
+    icon: backend,
   },
 ];
 
@@ -164,17 +164,19 @@ const roadmapitems = [
 const members = [
   {
     description: [
-      "Придумал эту историю. Бэк/фронт, девопс, инфосек и немного аутизма.",
-      "Came up with this story. Back/front, devops, infosec and a bit of autism.",
+      "FullStack Developer. DevOps. AI security research.",
+      "Back/front, devops and infosec..",
     ],
-    name: ["soitends", "soitends"],
-    role: "swiss knife",
-    image: "https://i.ibb.co/ZSnK6d0/hqdefault-502646920.jpg",
+    skills: [],
+    name: ["artias13", "artias13"],
+    role: "Full Stack",
+    image: "../src/assets/team/artias13.png",
+    link: "https://artias13.github.io",
   },
   {
     description: [
-      "ML. Шахматы. Математика. Физика. Филантроп. Не может сдать на права.",
-      "ML. Chess. Math. Physics. Filantrop. Can't pass the driving exam.",
+      "ML. Шахматы. Математика.",
+      "Python. ML. Chess. Math. ",
     ],
     name: ["alt_tanger", "alt_tanger"],
     role: "ML engineer",
@@ -186,7 +188,7 @@ const members = [
       "Head of the animal world. Backend.",
     ],
     name: ["pesos603", "pesos603"],
-    role: "swiss knife 2.0",
+    role: "Back end",
     image: "https://i.ibb.co/3YCYbvg/dove.png",
   },
   {

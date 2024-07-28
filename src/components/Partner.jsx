@@ -21,7 +21,7 @@ const Partner = () => {
           {language === "RU" ? "Партнеры" : "Partners"}
         </p>
         <h2 className={styles.sectionHeadText}>
-          {language === "RU" ? "С кем мы сотрудничаем" : "Who we cooperate with"}
+          {language === "RU" ? "С кем мы работаем" : "Who we work with"}
         </h2>
       </motion.div>
 
@@ -34,4 +34,4 @@ const Partner = () => {
   );
 };
 
-export default SectionWrapper(Partner, "");
+export default SectionWrapper(Partner, "partner");

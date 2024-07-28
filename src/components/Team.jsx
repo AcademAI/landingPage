@@ -7,7 +7,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { members } from "../constants";
 import { LanguageContext } from "../LanguageContext";
 
-const TeamCard = ({ index, description, name, role, image }) => {
+const TeamCard = ({ index, description, name, role, image, link }) => {
   const { language } = useContext(LanguageContext);
 
   return (
@@ -15,18 +15,14 @@ const TeamCard = ({ index, description, name, role, image }) => {
       variants={fadeIn("", "spring", index * 0.5, 0.75)}
       className="blue-gradient p-10 rounded-3xl xs:w-[320px] w-full"
     >
-      <p className="text-black font-black text-[48px]">"</p>
-
       <div className="mt-1">
-        <p className="text-black tracking-wider text-[18px]">
-          {description[language === "RU" ? 0 : 1]}
-        </p>
-
-        <div className="mt-7 flex justify-between items-center gap-1">
+        <div className="mt-1 flex justify-between items-center gap-1">
           <div className="flex-1 flex flex-col">
             <p className="text-black font-medium text-[16px]">
               <span className="blue-text-gradient">@</span>{" "}
-              {name[language === "RU" ? 0 : 1]}
+              <a href={`https://t.me/${name[language === "RU" ? 0 : 1]}`}>
+                {name[language === "RU" ? 0 : 1]}
+              </a>
             </p>
             <p className="mt-1 text-secondary text-[12px]">{role}</p>
           </div>
@@ -36,6 +32,9 @@ const TeamCard = ({ index, description, name, role, image }) => {
             className="w-20 h-20 rounded-full object-cover"
           />
         </div>
+        <p className="text-black tracking-wider text-[18px]">
+          {description[language === "RU" ? 0 : 1]}
+        </p>
       </div>
     </motion.div>
   );

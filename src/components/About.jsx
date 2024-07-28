@@ -54,8 +54,8 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         {language === "RU"
-          ? "Мы — команда разработчиков, специализирующихся на LLM, разработке бэкэнд сервисов и веб приложений. Имея большой опыт работы с Python и JavaScript, мы преуспеваем в создании надежных и масштабируемых решений с использованием различных фреймворков и библиотек. В свободное время мы участвуем в акселераторах и хакатонах."
-          : "We are a team of skilled software developers specializing in LLMs, backend services development, and web applications. With extensive experience in Python and JavaScript, we excel in creating robust and scalable solutions using different frameworks and libraries. In our spare time we participate in accelerators and hackathons."}
+          ? "AcademAI - это R&D команда, специализирующаяся на исследованиях технологий ИИ, а также их применении при разработке различных сервисов. Мы преуспеваем в создании надежных и прогрессивных решений для партнеров, а также развиваем собственные проекты в рамках участия в акселераторах и хакатонах. Члены нашей команды регулярно участвуют в международных конференциях и публикуют свои статьи. Наши направления работы включают:"
+          : "AcademAI is an R&D team, specializing in the AI research and its application in the development of various services. We excel in creating reliable and progressive solutions for partners, as well as developing our own projects through participation in accelerators and hackathons. Our team members regularly participate in international conferences and publish their papers. Our areas of work include:"}
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
