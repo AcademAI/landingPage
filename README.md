@@ -1,7 +1,3 @@
 # Landing page
 
-Really fancy React landingpage using threejs
-
-
-
-
+Really fancy React landingpage using threejs.
