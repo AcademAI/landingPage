@@ -22,7 +22,7 @@ jobs:
         run: |
           echo "Deploying to VPS"
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > private_key && chmod 600 private_key
-          ssh -o StrictHostKeyChecking=no -i private_key -p ${{secrets.PORT}} ${{ secrets.USER_NAME }}@${{ secrets.SSH_HOST }}: '
+          ssh -o StrictHostKeyChecking=no -i private_key -p ${{secrets.PORT}} ${{ secrets.USER_NAME }}@${{ secrets.SSH_HOST }} '
           cd /root/landingPage &&
           git reset --hard &&
           git checkout master &&
