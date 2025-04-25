@@ -10,6 +10,11 @@ export default defineConfig({
     },
     host: true, // needed for the Docker Container port mapping to work
     strictPort: true,
-    port: 5173, // you can replace this port with any port
+    port: 5173,
+  },
+  preview: {
+    host: true, // Ensures the preview server is accessible externally
+    port: 5173, // Same port as the server
+    allowedHosts: ['academai.ru'] // Add your allowed host here
   }
 })
