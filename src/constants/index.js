@@ -164,12 +164,12 @@ const roadmapitems = [
 const members = [
   {
     description: [
-      "FullStack разработчик. DevOps. Исследователь безопасности ИИ.",
-      "FullStack Developer. DevOps. AI security researcher.",
+      "FullStack Developer. DevOps. Cybersecurity practitioner.",
+      "FullStack Developer. DevOps. Cybersecurity practitioner.",
     ],
     name: ["artias13", "artias13"],
     role: "Full Stack",
-    image: "https://i.ibb.co/JRFQs65/headshot-circle.png",
+    image: "https://i.ibb.co/9kkQs3gv/headshot-circle.jpg",
     link: "https://artias13.github.io",
   },
   {
@@ -190,7 +190,7 @@ const members = [
     role: "Back end",
     image: "https://i.ibb.co/3YCYbvg/dove.png",
   },
-  {
+  /*{
     description: [
       "Энтузиаст информационной безопасности. CTF игрок.",
       "CyberSecurity enthusiast. CTF player.",
@@ -198,7 +198,7 @@ const members = [
     name: ["N4m3L3ss_kiddie", "N4m3L3ss_kiddie"],
     role: "Infosec",
     image: "https://i.ibb.co/GP1v5sh/robot.jpg",
-  },
+  },*/
 ];
 
 const projects = [
